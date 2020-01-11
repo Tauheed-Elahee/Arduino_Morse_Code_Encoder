@@ -23,7 +23,7 @@ set(ARDUINO_DEFAULT_PORT /dev/ttyACM0)
 link_directories(${ARDUINO_SDK_PATH}/libraries)
 
 generate_arduino_firmware(blink_cpp_test
-    SRCS blink.cpp
+    SRCS blink.cpp # Add Morse_Code.cpp
     PORT /dev/ttyACM0
     BOARD uno
 )
