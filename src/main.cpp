@@ -1,7 +1,7 @@
-// #include "Arduino.h"
-#include "../arduino/Arduino.h" // The install arduino library does not #include <stdint.h> for some reason
+#include "/usr/share/arduino/hardware/arduino/cores/arduino/Arduino.h"
+// #include "../arduino/Arduino.h" // The install arduino library does not #include <stdint.h> for some reason
 #include "/usr/share/arduino/hardware/arduino/cores/arduino/USBAPI.h" // Library where the class Serial_ is declared and has extern Serial_ Serial
-#include "LiquidCrystal/LiquidCrystal.h"
+//#include "LiquidCrystal/LiquidCrystal.h"
 
 // #include "LiquidCrystal.h"
 
