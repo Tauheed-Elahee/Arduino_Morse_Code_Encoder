@@ -1,9 +1,10 @@
 #ifndef MORSE_CODE_H
 #define MORSE_CODE_H
 
-#include <map>
+#include <unordered_map>
+#include <vector>
 #include <string>
-#include "Arduino.h"
+// #include "Arduino.h"
 
 // Classes might need an hpp file instead.
 
@@ -16,9 +17,10 @@ public:
 
 private:
     int dotlenght;
-    static map<string, int> morse_code;
+    static const unordered_map<char, vector<int>> morse_code;
     void dot(void);
     void dash(void);
+    static unordered_map<char, vector<int>> initialize_morse_code(void);
 };
 
 #endif//MORSE_CODE_H
