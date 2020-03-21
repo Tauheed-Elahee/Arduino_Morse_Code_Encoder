@@ -1,0 +1,4 @@
+# Leave out kdevelop files
+**kde**
+# Remove build folder
+build**
