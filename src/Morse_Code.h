@@ -17,9 +17,9 @@ public:
 
 private:
     int dotlenght;
-    static const unordered_map<char, vector<int>> morse_code;
     void dot(void);
     void dash(void);
+    static unordered_map<char, vector<int>> morse_code;
     static unordered_map<char, vector<int>> initialize_morse_code(void);
 };
 

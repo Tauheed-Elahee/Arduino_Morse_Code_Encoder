@@ -6,6 +6,7 @@
 Morse_Code::Morse_Code(int dotlenght)
 {
     this->dotlenght = dotlenght;
+    initialize_morse_code();
 }
 
 void Morse_Code::charToMorse(char input)
